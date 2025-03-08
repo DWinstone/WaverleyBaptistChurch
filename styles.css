@@ -246,7 +246,7 @@ nav a:hover {
     nav {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        background-color: #f8b021;
     }
 
     /* Display the navigation menu when active */
