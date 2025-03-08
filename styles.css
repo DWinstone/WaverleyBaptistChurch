@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Full Width */
+  .full-width {
+    width: 100%;
+  }
+
+  /* Container 90% Width of Body */
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+    background-color: #f8b021;
+    color: white;
+    padding: 20px 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Styling for the logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 20px;
+}
+
+.logo img {
+  height: 75px; /* Restrict the height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the heading inside the logo container */
+.logo h1 {
+    margin: 0;
+}
+
+/* Styling for the mobile header */
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*-------------------- Navigation Styles --------------------*/
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for anchor links inside the navigation bar */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Styling for anchor links on hover inside the navigation bar */
+nav a:hover {
+    color: #5b181a;
+}
+
+/* Styling for the hamburger menu (for mobile devices) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Styling for each line in the hamburger menu */
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+
+
+
+  /* Image Row */
+  .image-row img {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  hr {
+    display: block;
+    margin: 10px 0;
+    border-style: inset;
+    border-width: 1px;
+  }
+  /* Main Content Row (90% width) */
+  .content-row {
+    max-width: 80%;
+    margin: 20px auto;
+    /* background-color: aqua; */
+  }
+
+  /* Row with one column full width */
+  .one-column {
+    max-width: 80%;
+    justify-content: center;
+    margin: 20px auto;
+    /* background-color: bisque; */
+  }
+
+  #welcome img {
+    max-width: 100%; /* Maintain aspect ratio */
+	  height: auto;
+  }
+  
+  #welcome .column {
+	  float: right;
+	  width: 25%;
+	  margin: 10px;
+  }
+
+  #welcome p {
+    padding: 10px;
+  }
+
+  #info p {
+    padding: 10px;
+  }
+
+  #info {
+    padding: 30px;
+  }
+
+  #info h3{
+    text-align: center;
+  }
+
+  
+  
+  /* Row with two columns equal to 90% of width */
+  .two-columns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px auto;
+  }
+  .two-columns .column {
+    width: 48%;
+  }
+
+  /* Contact Card */
+  .contact-card {
+    padding: 30px;
+    margin: 30px 0;
+}
+
+
+.iframe-container {
+  width: 100%; /* Ensures it stays within the column */
+  max-width: 100%; /* Prevents overflow */
+  overflow: hidden; /* Hides any overflow */
+  position: relative; /* Ensures proper positioning */
+}
+
+.iframe-container iframe {
+  width: 100%; /* Makes the iframe responsive */
+  height: auto; /* Adjust as needed */
+  min-height: 300px; /* Ensures visibility */
+  display: block;
+  border: none;
+}
+
+  /* Footer */
+  footer {
+    background-color: #5b181a;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+  }
+  footer .container {
+    text-align: center;
+  }
+
+
+  @media (max-width: 1500px) {
+    #welcome .column {
+      width: 35%;
+      margin: 30px 10px;
+    }
+    }
+
+  @media (max-width: 1400px) {
+  #welcome .column {
+    width: 50%;
+    margin: 30px 10px;
+  }
+  }
+  /* Media query for screens with a maximum width of 1240px */
+@media (max-width: 1240px) {
+
+    /* Increased width on container and two-columns */
+    .container {
+      max-width: 90%;
+    }
+
+    .two-columns {
+      width: 90%;
+    }
+
+    /* Styling for header section on medium screens */
+    header {
+        flex-direction: column;
+    }
+
+    header .container {
+        display: block;
+        max-width: 90%;
+      }
+
+    /* Styling for mobile header */
+    .mobile-header {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    /* Hide navigation menu on small screens */
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    /* Display the navigation menu when active */
+    nav.active {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Styling for links inside the active navigation menu */
+    nav.active a {
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Display the hamburger menu in mobile view */
+    .hamburger {
+        display: flex;
+    }
+    #welcome .column {
+      width: 50%;
+      margin: 30px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+    max-width: 80%;
+  }
+
+  .content-row {
+    max-width: 100%;
+  }
+
+  #welcome .column {
+    min-width: 25%;
+    margin: 10px;
+  }
+
+  .two-columns {
+    max-width: 100%;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  /* Row with two columns changing flex direction from row to column */
+.two-columns {
+  flex-direction: column;
+}
+/* Increased the width of the columns and added padding */
+.two-columns {
+  max-width: 100%;
+  padding: 10px;
+}
+
+
+
+}
+
+@media (max-width: 760px) {
+
+  .container {
+    max-width: 80%;
+  }
+  .content-row {
+    max-width: 100%;
+  }
+
+
+  .column {
+    min-width: 100%;
+  }
+
+    /* Row with two columns changing flex direction from row to column */
+  .two-columns {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #welcome .column {
+	  float: none;
+	  width: 100%;
+	  margin: 30px auto 30px auto;
+  }
+
+  
+
+
+}
+
+@media (max-width: 650px) {
+
+  .container {
+    max-width: 90%;
+  }
+
+}
+
